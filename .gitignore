@@ -20,5 +20,11 @@
 !/doc/.keep
 !/coverage/.keep
 
+# Spec examples file
+spec/examples.txt
+
+# Spring pids
+spring-*
+
 # Ignore Byebug command history file.
 .byebug_history

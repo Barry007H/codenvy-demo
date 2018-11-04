@@ -47,6 +47,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'guard-rspec'
+  gem 'rb-readline'
   gem 'rspec-rails'
   gem 'simplecov'
 end
@@ -61,6 +62,7 @@ group :development do
 
   gem 'annotate'
   gem 'meta_request'
+  gem 'reek'
   gem 'rubocop'
 end
 
