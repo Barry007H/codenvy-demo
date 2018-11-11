@@ -19,5 +19,17 @@ FactoryBot.define do
   factory :room do
     sequence(:name) { |n| "Room Name #{n}" }
     description { 'Room description.' }
+
+    trait :with_messages do
+      transient do
+        message_count { 3 }
+      end
+
+      after :create do |room, evaluator|
+        create_list :message, evaluator.message_count, room: room
+      end
+    end
+
+    factory :room_with_messages, traits: %i[with_messages]
   end
 end
