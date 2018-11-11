@@ -19,4 +19,7 @@ class Room < ApplicationRecord
   validates :description, presence: true
   validates :name, presence: true,
                    uniqueness: { case_sensitive: false }
+
+  has_many :messages
+  has_many :users, through: :messages
 end

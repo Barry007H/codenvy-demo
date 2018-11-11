@@ -20,7 +20,14 @@
 !/doc/.keep
 !/coverage/.keep
 
+# Spec examples
+spec/examples.txt
 
+#Spring pids
+spring-*
+
+# Vim swapfiles
+.sw*
 
 # Ignore Byebug command history file.
 .byebug_history
