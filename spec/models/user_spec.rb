@@ -79,4 +79,29 @@ RSpec.describe User, type: :model do
       end
     end
   end
+
+  describe 'instance methods' do
+    it { is_expected.to respond_to :full_name }
+
+    describe '#full_name' do
+      data = [
+        {
+          full_name: 'Bill Preston',
+          user:      FactoryBot.build(:user, first_name: 'Bill', last_name: 'Preston')
+        },
+        {
+          full_name: 'Ted Logan',
+          user:      FactoryBot.build(:user, first_name: 'Ted', last_name: 'Logan')
+        }
+      ]
+
+      data.each do |datum|
+        context "when @first_name is '#{datum[:user].first_name}' and @last_name is '#{datum[:user].last_name}'" do
+          it "returns '#{datum[:full_name]}'" do
+            expect(datum[:user].full_name).to eq(datum[:full_name])
+          end
+        end
+      end
+    end
+  end
 end
