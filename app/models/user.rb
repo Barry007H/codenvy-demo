@@ -24,4 +24,8 @@ class User < ApplicationRecord
 
   has_many :messages
   has_many :rooms, through: :messages
+
+  def full_name
+    "#{first_name} #{last_name}"
+  end
 end
