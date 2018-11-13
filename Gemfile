@@ -61,6 +61,7 @@ group :development do
 
   gem 'annotate'
   gem 'meta_request'
+  gem 'reek'
   gem 'rubocop'
 end
 

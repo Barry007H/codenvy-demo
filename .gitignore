@@ -27,7 +27,7 @@ spec/examples.txt
 spring-*
 
 # Vim swapfiles
-.sw*
+*.sw*
 
 # Ignore Byebug command history file.
 .byebug_history

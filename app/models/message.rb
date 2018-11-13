@@ -17,7 +17,6 @@
 #  index_messages_on_user_id  (user_id)
 #
 
-
 class Message < ApplicationRecord
   belongs_to :room
   belongs_to :user
