@@ -1,0 +1,10 @@
+%div[message]
+  %p
+    .body
+      %strong<
+        = message.user.full_name
+        \: 
+      = message.body
+    .timestamp
+      = message.created_at
+
