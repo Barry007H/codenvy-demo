@@ -17,7 +17,6 @@
 #  index_messages_on_user_id  (user_id)
 #
 
-
 FactoryBot.define do
   factory :message do
     room
