@@ -61,8 +61,8 @@ group :development do
 
   gem 'annotate'
   gem 'meta_request'
-  gem 'rubocop'
   gem 'rb-readline'
+  gem 'rubocop'
 end
 
 group :test do
