@@ -28,3 +28,6 @@
 
 # Vim swapfiles
 *.sw*
+
+# Spec examples
+spec/examples.txt
