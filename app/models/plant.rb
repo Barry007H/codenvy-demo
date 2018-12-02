@@ -16,5 +16,9 @@
 #  index_plants_on_code  (code) UNIQUE
 #
 
+# Representation of a manufacturing plant.
 class Plant < ApplicationRecord
+  validates :code, presence: true,
+                   uniqueness: { case_sensitive: false }
+  validates :name, presence: true
 end
