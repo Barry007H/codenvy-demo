@@ -20,6 +20,9 @@
 !/doc/.keep
 !/coverage/.keep
 
+# Test examples
+/spec/examples.txt
+
 # Ignore Byebug command history file.
 .byebug_history
 

@@ -62,6 +62,7 @@ group :development do
   gem 'annotate'
   gem 'meta_request'
   gem 'rb-readline'
+  gem 'reek'
   gem 'rubocop'
 end
 
